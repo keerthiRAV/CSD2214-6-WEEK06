@@ -5,20 +5,22 @@
     <script>
         var rows = prompt("how many rows for your multiplication table?");
         var cols = prompt("how many cols for your multiplication table?");
-        if (rows == "" || row == null) {
+        if (rows == "" || rows == null) {
             rows = 10;
         }
         if (cols == "" || cols == null) {
             cols = 10;
         }
-        createTable(rows, cols);
+
+        createTable(rows,cols);
+
         function createTable(rows, cols) {
             var j = 1;
             var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
             for (i = 1; i <= rows; i++) {
                 output = output + "<tr>";
                 while (j <= cols) {
-                    output = output + "<td>" + i * j + "</td>";
+                    output = output+"<td>"+ i*j +"</td>";
                     j = j + 1;
                 }
                 output = output + "</tr>";
