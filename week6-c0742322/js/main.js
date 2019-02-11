@@ -1,2 +1,2 @@
 ﻿// Your code here!
-alert('hello');
+alert('he');
